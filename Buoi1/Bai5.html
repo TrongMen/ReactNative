@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 5</title>
+</head>
+
+<body>
+    <script>
+        const arr = [{
+            dolphins: [44, 23, 71],
+            Koalas: [65, 54, 49]
+        }, {
+            dolphins: [85, 54, 41],
+            Koalas: [23, 34, 27]
+        }];
+
+        function caclAverage(arr_x) {
+            return arr_x.reduce(total, num) => {
+                return total + num;
+            }
+            0 / 3;
+        }
+
+        function Check(x, y) {
+            if (x / y > 2) {
+                return `dolphin win(${x} vs.${y})`;
+            } else if (y / x > 2)
+                return `Koalas win(${y} vs.${x})`;
+            return "No team wins";
+        }
+        for (let x in arr) {
+            let avrage_dolphin = caclAverage(arr[x].dolphins);
+            let avrage_Koalas = caclAverage(arr[x].Koalas);
+        }
+        let str = Check(avrage_dolphin, avrage_Koalas);
+        this.Document.getElenmentById("Data" + x).innerHTML = str;
+    </script>
+</body>
+
+</html>
